@@ -33,8 +33,8 @@ public class SearchResultsRVAdapter extends RecyclerView.Adapter<SearchResultsRV
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        // inside on bind view holder method we are setting
-        // data to each item of recycler view.
+        /* inside on bind view holder method we are setting
+         data to each item of recycler view.*/
         DataModal modal = dataModalArrayList.get(position);
         holder.titleTV.setText(modal.getTitle());
         holder.snippetTV.setText(modal.getDisplayed_link());
